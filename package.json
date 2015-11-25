@@ -1,0 +1,21 @@
+{
+  "name": "sp-hello-bar",
+  "version": "0.0.1",
+  "description": "display a hello bar on page scroll",
+  "main": "lib/SpHelloBar.js",
+  "scripts": {
+    "compileForNpm": "babel src/js/SpHelloBar.js -o lib/SpHelloBar.js",
+    "prepublish": "npm run compileForNpm",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sitepoint/sp-random-hello-bar"
+  },
+  "author": "Brad Denver",
+  "license": "GPL",
+  "devDependencies": {
+    "babel-cli": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18"
+  }
+}

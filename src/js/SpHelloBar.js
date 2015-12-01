@@ -1,4 +1,4 @@
-function SpHelloBar({
+export default function SpHelloBar({
     isEnabled        = true,
     isShown          = false,
     shouldBeShown    = false,
@@ -123,5 +123,3 @@ SpHelloBar.prototype = {
     }
   }
 }
-
-export default SpHelloBar;

@@ -4,6 +4,7 @@
   "description": "display a hello bar on page scroll",
   "main": "lib/SpHelloBar.js",
   "scripts": {
+    "compileBasic": "node_modules/.bin/webpack -p --progress --colors",
     "compileForNpm": "mkdir -p lib && babel src/js/SpHelloBar.js -o lib/SpHelloBar.js",
     "prepublish": "npm run compileForNpm",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,8 +17,19 @@
   "contributors": ["Brad Denver"],
   "license": "GPL-2.0+",
   "devDependencies": {
+    "autoprefixer": "^6.1.1",
     "babel-cli": "^6.2.0",
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
     "babel-plugin-add-module-exports": "^0.1.1",
-    "babel-preset-es2015": "^6.1.18"
+    "babel-polyfill": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "css-loader": "^0.23.0",
+    "extract-text-webpack-plugin": "^0.9.1",
+    "postcss-color-function": "^2.0.0",
+    "postcss-loader": "^0.8.0",
+    "postcss-nested": "^1.0.0",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.8"
   }
 }

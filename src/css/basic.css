@@ -1,0 +1,110 @@
+
+.SpHelloBar {
+  transition: top 800ms;
+  background: #1c94c6;
+  display: block;
+  position: fixed;
+  top: -60px;
+  width: 100%;
+  z-index: 999;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  line-height: 16px;
+
+  p {
+    color: #fff;
+  }
+
+  &.u-show {
+    top: 0px;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+  }
+}
+
+.SpHelloBar_container {
+  margin: 0 50px;
+  max-width: 80em;
+  display: block;
+  padding: 0.7em;
+
+  @media (max-width: 680px) {
+    text-align: center;
+  }
+}
+
+.SpHelloBar_container:before, .SpHelloBar_container:after {
+  content: " ";
+  display: table;
+}
+
+.SpHelloBar_container:after {
+  clear: both;
+}
+
+.SpHelloBar_brand {
+  float: left;
+  margin: 3px 0 0 0;
+
+  @media (max-width: 680px) {
+    float: none;
+  }
+}
+
+.SpHelloBar_message {
+  font-weight: 700;
+  float: left;
+  line-height: 1;
+  padding-left: 1em;
+  margin-top: 7px;
+
+  @media (max-width: 680px) {
+    font-size: 13px;
+  }
+}
+
+.SpHelloBar_action {
+  background: color(#1c94c6 lightness(+15%));
+  float: right;
+  margin-bottom: 0;
+  border-radius: 2px;
+  appearance: none;
+  padding: 0.6em 1.1em;
+  font-size: 0.8125em;
+  text-transform: capitalize;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  border: solid 0 #1779a2;
+  color: #fff;
+
+  @media (max-width: 680px) {
+    float: none;
+    display: block;
+    margin: 10px 0 0 0;
+  }
+}
+
+.SpHelloBar_close {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  font-size: 13px;
+  height: 20px;
+  width: 20px;
+  padding-top: 2px;
+  top: 16px;
+  right: 11px;
+  text-align: center;
+
+  &:visited {
+    color: #fff;
+  }
+
+  &:hover {
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+

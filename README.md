@@ -1,8 +1,33 @@
 # sp-random-hello-bar
-A WordPress plugin and npm module to randomly (with weighting) show a hello bar on page scroll
+A hello bar is a thin bar of content that slides into view once the user scrolls past a set point on a page.
+The message content is up to you, but is ideal for advertising, product annoncements or other messages.
+This repo contains a WordPress plugin and npm module to randomly (with weighting) show a hello bar on page scroll.
+
+- [WordPress plugin](#wordpress-plugin)
+- [npm module](#npm-module)
+
+![Example Hello Bar](screenshot-1.png)
 
 ## WordPress plugin
-coming soon
+[sp-random-hello-bar](https://wordpress.org/plugins/sp-random-hello-bar/)
+The plugin provides an admin interface to create multiple hello bar messages that can then be randomly displayed on user facing pages.
+
+By setting weightings for each message you can determine how often each is displayed. On each page load a message is randomly selected
+(respecting the weightings given). A random number is generated client side before fetching the message content to ensure it is compatible
+with caching services such as W3 Total Cache.
+
+All the required javascript and css is included in the plugin and can be set to enqueue via settings.
+Alternatively you can roll your own.
+
+### Installation
+
+1. Upload the entire `/sp-random-hello-bar/` folder to the `/wp-content/plugins/` directory.
+1. Activate the plugin through the 'Plugins' menu in WordPress.
+1. Navigate to the **SP Random Hello Bar** section of the *Settings* menu. At `example.com` this page would be found at `http://example.com/wp-admin/options-general.php?page=sp-random-hello-bar`.
+1. Enable the hello bar to display in pages.
+1. Select which javascript, if any, you would like to enqueue.
+1. Select if you would like to enqueue basic css styles fror the hello bar.
+1. Enter content for one or more hello bars and set a weighting.
 
 ## npm module
 The javascript that displays the hello bar as been extracted into a npm module so it can be used without the wordpress plugin.

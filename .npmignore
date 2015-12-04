@@ -1,2 +1,7 @@
+public/
 src/
+*.php
+*.png
+readme.txt
+webpack.config.js
 .babelrc

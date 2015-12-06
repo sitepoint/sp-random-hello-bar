@@ -1,0 +1,3 @@
+<input type="radio" name="<?php echo self::PLUGIN_NAME; ?>-basic-js" value="" <?php checked($setting, ""); ?>/> None <br />
+<input type="radio" name="<?php echo self::PLUGIN_NAME; ?>-basic-js" value="basic" <?php checked($setting, "basic"); ?>/> Basic <span class="description"> - request bar content via jQuery.ajax and display when scrolled to 300px</span><br />
+<input type="radio" name="<?php echo self::PLUGIN_NAME; ?>-basic-js" value="basicStorage" <?php checked($setting, "basicStorage"); ?>/> Basic with storage <span class="description"> - basic plus disables bar for 14 days when closed via button</span>

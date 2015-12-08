@@ -1,5 +1,5 @@
 import SpHelloBar                          from "./SpHelloBar";
-import { checkStorage, disableViaStorage } from './helpers/disableViaStorage';
+import { checkStorage, disableViaStorage } from "./helpers/disableViaStorage";
 import getRandomHelloBar                   from "./helpers/getRandomHelloBar";
 
 (function(window, $, _) {
@@ -9,10 +9,10 @@ import getRandomHelloBar                   from "./helpers/getRandomHelloBar";
   });
 
   // extend SpHelloBar
-  sph.after('beforeInit', function() {
+  sph.after("beforeInit", function() {
     checkStorage.call(sph);
   });
-  sph.after('onClose', function() {
+  sph.after("onClose", function() {
     disableViaStorage.call(sph);
   });
 

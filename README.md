@@ -121,4 +121,5 @@ sph.after('onClose', function() {
 sph.init();
 ```
 
-
+## Examples
+see the examples folder for ideas on how the hello bar can be customised/extended.

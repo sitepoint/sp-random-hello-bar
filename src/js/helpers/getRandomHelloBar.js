@@ -1,6 +1,6 @@
 export default function ($, cb) {
   $.ajax({
-    type : 'POST',
+    type : "POST",
     url  : ajax_object.ajax_url,
     data : {
       action : "get_random_hello_bar",

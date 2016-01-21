@@ -3,7 +3,7 @@ Contributors: sitepointdevs
 Tags: ads, advertising, marketing, products
 Requires at least: 3.0
 Tested up to: 4.3
-Stable tag: 0.0.1
+Stable tag: 0.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -60,10 +60,13 @@ I'm glad you asked. You can read about how it was put together on [SitePoint](ht
 
 1. **Hello Bar in use** - An example hello bar being displayed on the Twenty Fifteen theme.
 2. **SP Random Hello Bar Submenu**
-3. **Settings** - Quickly enabled the hello bar feature and chose what js/css to enqueue.
+3. **Settings** - Quickly enable the hello bar feature and chose what js/css to enqueue.
 4. **Content** - Add as many hello bars as you wish.
 
 == Changelog ==
 
 = 0.0.1 =
 * Submitted to WordPress for approval
+
+= 0.0.2 =
+* Added assets

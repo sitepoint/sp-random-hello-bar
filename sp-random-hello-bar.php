@@ -3,7 +3,7 @@
 Plugin Name:  SP Random Hello Bar
 Plugin URI:   https://github.com/sitepoint/sp-random-hello-bar
 Description:  Displays a random hello bar after scrolling past an element of the page.
-Version:      0.0.2
+Version:      0.0.3
 Author:       Brad Denver
 License:      GPL2
 */

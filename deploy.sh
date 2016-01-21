@@ -92,7 +92,8 @@ cd $SVNPATH/tags/$NEWVERSION1
 svn commit --username=$SVNUSER -m "Tagging version $NEWVERSION1"
 
 echo "Exporting assets from the HEAD of master from git to the assets of SVN"
-git checkout-index -a --prefix=$SVNPATH/trunk/ assets/*.*
+cd $GITPATH
+git checkout-index -a --prefix=$SVNPATH/ assets/*.*
 
 echo "Changing directory to SVN and committing to assets"
 cd $SVNPATH/assets/

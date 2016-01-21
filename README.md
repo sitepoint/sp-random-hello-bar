@@ -8,6 +8,8 @@ This repo contains a WordPress plugin and npm module to randomly (with weighting
 
 ![Example Hello Bar](screenshot-1.png)
 
+You can read about how it was put together on [SitePoint](http://www.sitepoint.com/sitepoint-random-hello-bar-wordpress-plugin/).
+
 ## WordPress plugin
 [sp-random-hello-bar](https://wordpress.org/plugins/sp-random-hello-bar/)
 The plugin provides an admin interface to create multiple hello bar messages that can then be randomly displayed on user facing pages.

@@ -11,7 +11,7 @@ Randomly (with weighting) shows a hello bar message on page scroll.
 
 == Description ==
 
-A hello bar is a thin bar of content that slides into view once the user scrolls past a set point on a page.
+As descibed in-depth on [SitePoint](http://www.sitepoint.com/sitepoint-random-hello-bar-wordpress-plugin/) a hello bar is a thin bar of content that slides into view once the user scrolls past a set point on a page.
 The message content is up to you, but is ideal for advertising, product annoncements or other messages.
 
 This plugin provides an admin interface to create multiple hello bar messages that can then be randomly displayed on user facing pages.
@@ -50,6 +50,11 @@ However the Basic and Basic with storage scripts assume that jquery and undersco
 Go for it. The basic scripts assume the default css class names are being used but the only one that is required is `.SpHelloBar`.
 The javascript has been designed to be as flexible as possible so see the [docs](https://github.com/sitepoint/sp-random-hello-bar#constructor) for all the options that can be overridden
 when writing your own script.
+
+= How did you build something so wonderful? =
+
+I'm glad you asked. You can read about how it was put together on [SitePoint](http://www.sitepoint.com/sitepoint-random-hello-bar-wordpress-plugin/).
+
 
 == Screenshots ==
 

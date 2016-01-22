@@ -65,7 +65,6 @@ echo "Creating local copy of SVN repo ..."
 svn co $SVNURL $SVNPATH
 
 echo "Clearing svn repo so we can overwrite it"
-svn rm $SVNPATH/assets/*
 svn rm $SVNPATH/trunk/*
 
 echo "Exporting the HEAD of master from git to the trunk of SVN"
@@ -90,16 +89,6 @@ cd $SVNPATH
 svn copy trunk/ tags/$NEWVERSION1/
 cd $SVNPATH/tags/$NEWVERSION1
 svn commit --username=$SVNUSER -m "Tagging version $NEWVERSION1"
-
-echo "Exporting assets from the HEAD of master from git to the assets of SVN"
-cd $GITPATH
-git checkout-index -a --prefix=$SVNPATH/ assets/*.*
-
-echo "Changing directory to SVN and committing to assets"
-cd $SVNPATH/assets/
-# Add all new files that are not set to be ignored
-svn status | grep -v "^.[ \t]*\..*" | grep "^?" | awk '{print $2}' | xargs svn add
-svn commit --username=$SVNUSER -m "$COMMITMSG"
 
 echo "Removing temporary directory $SVNPATH"
 rm -fr $SVNPATH/

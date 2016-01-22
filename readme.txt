@@ -3,7 +3,7 @@ Contributors: sitepointdevs
 Tags: ads, advertising, marketing, products
 Requires at least: 3.0
 Tested up to: 4.3
-Stable tag: 0.0.3
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -70,3 +70,6 @@ I'm glad you asked. You can read about how it was put together on [SitePoint](ht
 
 = 0.0.2 =
 * Added assets
+
+= 1.0.0 =
+* Ready for use

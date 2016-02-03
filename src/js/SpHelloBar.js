@@ -73,6 +73,7 @@ SpHelloBar.prototype = {
   findCloseBtn() {
     this.$closeBtn = this.$el.querySelector(this.closeBtnSelector);
     this.$closeBtn && this.$closeBtn.addEventListener('click', this.onClose.bind(this));
+    this.$closeBtn && this.$closeBtn.addEventListener('keypress', this.onClose.bind(this));
   },
 
   findLink() {

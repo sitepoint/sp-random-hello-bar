@@ -1,6 +1,6 @@
 {
   "name": "sp-hello-bar",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "display a hello bar on page scroll",
   "main": "lib/SpHelloBar.js",
   "scripts": {
